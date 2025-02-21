@@ -11,9 +11,25 @@
     </style>
 </head>
 <body>
-    <model-viewer src="https://github.com/cymobe/3d-model-files-cafe/raw/main/CAFE%20(1).glb" ar ar-modes="webxr scene-viewer quick-look" 
-        camera-controls tone-mapping="neutral" auto-rotate 
-        shadow-intensity="1.08" shadow-softness="1">
+    <model-viewer src="https://github.com/cymobe/3d-model-files-cafe/raw/main/CAFE%20(1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1.08" shadow-softness="1" camera-orbit="-1795deg 94.34deg 4.709m" field-of-view="30deg" auto-rotate environment-image="whipple_creek_regional_park_04_1k.hdr">
+        <button class="Hotspot" slot="hotspot-1" data-position="0.15601537408896252m 0.7568772046762697m 4.490525611819743m" data-normal="0.5789004828467105m 0.04296510227121537m 0.8142654548405388m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Front Label</div>
+        </button>
+        <button class="Hotspot" slot="hotspot-3" data-position="-0.09814146976897004m 0.6751727691074113m 3.8764606088530384m" data-normal="-0.44622774706882223m 0.04086312894076865m -0.8939860191518955m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Origin</div>
+        </button>
+        <button class="Hotspot" slot="hotspot-6" data-position="-0.3853008559106836m 1.2791830742548302m 4.095674263876408m" data-normal="-0.41572046490163755m 0.15394289811872877m -0.8963693876861107m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">QR Code</div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+        </div>
     </model-viewer>
 </body>
 </html>
